@@ -1,0 +1,985 @@
+/* Global heart icon styling for all screen sizes */
+.btn-addwish-b2 i.fa-heart {
+    color: #ccc !important; /* Light gray for unfilled state */
+    transition: color 0.3s ease !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    filter: none !important; /* Remove any conflicting filters */
+}
+
+.btn-addwish-b2.active-wishlist i.fa-heart {
+    color: #310E68 !important; /* Dark purple for filled state */
+    filter: none !important; /* Remove any conflicting filters */
+}
+
+.btn-addwish-b2:hover i.fa-heart {
+    color: #310E68 !important; /* Dark purple for hover state */
+    filter: none !important; /* Remove any conflicting filters */
+}
+
+/* Force override any existing colors with higher specificity */
+.btn-addwish-b2 i.fa-heart {
+    color: #ccc !important;
+}
+
+.btn-addwish-b2.active-wishlist i.fa-heart {
+    color: #310E68 !important;
+}
+
+.btn-addwish-b2:hover i.fa-heart {
+    color: #310E68 !important;
+}
+
+/* Override any existing CSS that might be interfering */
+.btn-addwish-b2 i.fa-heart,
+.btn-addwish-b2 i.fa-heart::before,
+.btn-addwish-b2 i.fa-heart::after {
+    color: inherit !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+/* Ensure the heart icon is always visible */
+.btn-addwish-b2 i.fa-heart {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+/* Additional specificity to override any blue colors */
+.btn-addwish-b2 i.fa-heart,
+.btn-addwish-b2 i.fa-heart::before,
+.btn-addwish-b2 i.fa-heart::after,
+.btn-addwish-b2 i.fa-heart * {
+    color: #ccc !important;
+}
+
+.btn-addwish-b2.active-wishlist i.fa-heart,
+.btn-addwish-b2.active-wishlist i.fa-heart::before,
+.btn-addwish-b2.active-wishlist i.fa-heart::after,
+.btn-addwish-b2.active-wishlist i.fa-heart * {
+    color: #310E68 !important;
+}
+
+.btn-addwish-b2:hover i.fa-heart,
+.btn-addwish-b2:hover i.fa-heart::before,
+.btn-addwish-b2:hover i.fa-heart::after,
+.btn-addwish-b2:hover i.fa-heart * {
+    color: #310E68 !important;
+}
+
+/* Product page specific heart icon styling */
+.product-detail .btn-addwish-b2 i.fa-heart,
+.product-detail .btn-addwish-b2 i.fa-heart::before,
+.product-detail .btn-addwish-b2 i.fa-heart::after {
+    color: #ccc !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+}
+
+.product-detail .btn-addwish-b2.active-wishlist i.fa-heart,
+.product-detail .btn-addwish-b2.active-wishlist i.fa-heart::before,
+.product-detail .btn-addwish-b2.active-wishlist i.fa-heart::after {
+    color: #310E68 !important;
+}
+
+.product-detail .btn-addwish-b2:hover i.fa-heart,
+.product-detail .btn-addwish-b2:hover i.fa-heart::before,
+.product-detail .btn-addwish-b2:hover i.fa-heart::after {
+    color: #310E68 !important;
+}
+
+/* Mobile-specific product page heart icon styling */
+@media screen and (max-width: 767px) {
+    .btn-addwish-b2 {
+        min-width: 40px !important;
+        min-height: 40px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: rgba(255, 255, 255, 0.9) !important;
+        border-radius: 50% !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+        z-index: 10 !important;
+        position: relative !important;
+    }
+    
+    .btn-addwish-b2 i.fa-heart {
+        font-size: 24px !important;
+        width: 24px !important;
+        height: 24px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        color: #ccc !important;
+        filter: none !important;
+    }
+    
+    .btn-addwish-b2.active-wishlist i.fa-heart {
+        color: #310E68 !important;
+        filter: none !important;
+    }
+    
+    .btn-addwish-b2:hover i.fa-heart {
+        color: #310E68 !important;
+        filter: none !important;
+    }
+    
+    /* Ensure heart icons are clickable on mobile */
+    .btn-addwish-b2:active {
+        transform: scale(0.95) !important;
+    }
+    
+    .btn-addwish-b2:focus {
+        outline: 2px solid #310E68 !important;
+        outline-offset: 2px !important;
+    }
+}
+
+/* Ensure the wishlist button itself is properly styled */
+.btn-addwish-b2 {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 30px !important;
+    min-height: 30px !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    position: relative !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Ensure heart icons are properly sized and visible */
+.btn-addwish-b2 i.fa-heart {
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    min-height: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Ensure Font Awesome icons are properly displayed */
+.btn-addwish-b2 i.fa-heart::before {
+    content: "\f004" !important; /* Font Awesome heart icon */
+    font-family: "FontAwesome" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    text-decoration: inherit !important;
+}
+
+/* Fallback heart icon if Font Awesome fails to load */
+.btn-addwish-b2 i.fa-heart {
+    position: relative !important;
+}
+
+.btn-addwish-b2 i.fa-heart::after {
+    content: "♥" !important; /* Unicode heart symbol as fallback */
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    display: block !important;
+}
+
+/* Mobile-specific fallback heart icon */
+@media screen and (max-width: 767px) {
+    .btn-addwish-b2 i.fa-heart::after {
+        content: "♥" !important;
+        font-size: 24px !important;
+        color: #ccc !important;
+        z-index: 5 !important;
+    }
+    
+    .btn-addwish-b2.active-wishlist i.fa-heart::after {
+        color: #310E68 !important;
+    }
+    
+    .btn-addwish-b2:hover i.fa-heart::after {
+        color: #310E68 !important;
+    }
+}
+
+/* Mobile Responsiveness Fixes */
+
+/* Ensure no default margins on body and html */
+@media screen and (max-width: 767px) {
+    html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    body {
+        padding-top: 0 !important;
+    }
+}
+
+/* Fix header icons shadow issues on mobile */
+@media screen and (max-width: 991px) {
+    .wrap-header-mobile .icon-header-item {
+        text-shadow: none !important;
+        filter: none !important;
+        -webkit-filter: none !important;
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+    }
+    
+    .wrap-header-mobile .icon-header-item i {
+        text-shadow: none !important;
+        filter: none !important;
+        -webkit-filter: none !important;
+        color: #333 !important;
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+    }
+    
+    .wrap-header-mobile .icon-header-item:hover i {
+        color: #310E68 !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+    }
+    
+    /* Remove any box shadows from mobile header */
+    .wrap-header-mobile {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    /* Ensure mobile header icons are properly sized */
+    .wrap-header-mobile .icon-header-item {
+        width: 40px !important;
+        height: 40px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .wrap-header-mobile .icon-header-item i {
+        font-size: 20px !important;
+        line-height: 1 !important;
+    }
+}
+
+/* Fix slider text shadow issues on mobile */
+@media screen and (max-width: 767px) {
+    .layer-slick1 .ltext-101,
+    .layer-slick1 .ltext-201 {
+        text-shadow: none !important;
+        -webkit-text-shadow: none !important;
+        filter: none !important;
+        -webkit-filter: none !important;
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+    }
+    
+    .layer-slick1 .cl2 {
+        text-shadow: none !important;
+        -webkit-text-shadow: none !important;
+        filter: none !important;
+        -webkit-filter: none !important;
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        color: #333 !important;
+        /* Remove white background */
+        background-color: transparent !important;
+        /* Remove all padding and margins */
+        padding: 0 !important;
+        margin: 0 !important;
+        font-weight: 600 !important;
+        /* Left align text */
+        text-align: left !important;
+        display: block !important;
+    }
+    
+    .layer-slick1 .ltext-101.cl2 {
+        font-size: 16px !important;
+        line-height: 1.2 !important;
+        font-weight: 600 !important;
+    }
+    
+    .layer-slick1 .ltext-201.cl2 {
+        font-size: 22px !important;
+        line-height: 1.1 !important;
+        font-weight: 700 !important;
+    }
+    
+    /* Remove any existing text shadows from all slider text */
+    .section-slide * {
+        text-shadow: none !important;
+        -webkit-text-shadow: none !important;
+    }
+}
+
+    /* Fix slider image display issues on mobile */
+    @media screen and (max-width: 767px) {
+        .item-slick1 {
+            height: 100vh !important;
+            min-height: 100vh !important;
+            background-size: contain !important;
+            background-position: center center !important;
+            background-repeat: no-repeat !important;
+            position: relative !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+            /* Ensure full coverage */
+            width: 100vw !important;
+            margin-left: calc(-50vw + 50%) !important;
+            margin-right: calc(-50vw + 50%) !important;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+    
+    .item-slick1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.1);
+        z-index: 1;
+    }
+    
+    .layer-slick1 {
+        position: relative;
+        z-index: 2;
+        text-align: left !important;
+        padding: 0;
+        width: 100%;
+        margin: 0 !important;
+    }
+    
+    .flex-col-l-m {
+        text-align: left !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+        padding: 0 0 0 40px !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    .flex-col-l-m .layer-slick1 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+            /* Ensure slider container is properly sized */
+        .wrap-slick1 {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+            width: 100vw !important;
+            overflow: hidden !important;
+        }
+    
+            .section-slide {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+            width: 100vw !important;
+            overflow: hidden !important;
+        }
+        
+        /* Ensure slick1 container has no margins */
+        .section-slide .slick1 {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+}
+
+/* Additional mobile fixes for better responsiveness */
+@media screen and (max-width: 575px) {
+    .item-slick1 {
+        height: 50vh !important;
+        min-height: 300px !important;
+    }
+    
+    .layer-slick1 .ltext-101.cl2 {
+        font-size: 16px !important;
+        padding: 6px 10px !important;
+    }
+    
+    .layer-slick1 .ltext-201.cl2 {
+        font-size: 24px !important;
+        padding: 8px 12px !important;
+    }
+    
+    .flex-col-l-m {
+        padding: 15px !important;
+    }
+}
+
+/* Fix for very small screens */
+@media screen and (max-width: 480px) {
+    .item-slick1 {
+        height: 45vh !important;
+        min-height: 250px !important;
+    }
+    
+    .layer-slick1 .ltext-101.cl2 {
+        font-size: 14px !important;
+        padding: 5px 8px !important;
+    }
+    
+    .layer-slick1 .ltext-201.cl2 {
+        font-size: 20px !important;
+        padding: 6px 10px !important;
+    }
+}
+
+/* Ensure proper mobile header icon display - keep original spacing */
+@media screen and (max-width: 991px) {
+    .wrap-header-mobile .wrap-icon-header {
+        display: flex !important;
+        align-items: center !important;
+        /* Remove gap to keep original spacing */
+    }
+    
+    .wrap-header-mobile .icon-header-item {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        /* Remove width/height constraints to keep original sizing */
+        transition: background-color 0.3s ease !important;
+    }
+    
+    .wrap-header-mobile .icon-header-item:hover {
+        background-color: rgba(49, 14, 104, 0.1) !important;
+    }
+    
+    .wrap-header-mobile .icon-header-item i {
+        /* Keep original font size */
+        line-height: 1 !important;
+    }
+}
+
+/* Fix mobile menu positioning */
+@media screen and (max-width: 991px) {
+    .menu-mobile {
+        top: 70px !important;
+        max-height: calc(100vh - 70px) !important;
+    }
+    
+    body {
+        padding-top: 0 !important;
+    }
+}
+
+
+
+/* Improve mobile slider navigation */
+@media screen and (max-width: 767px) {
+    .arrow-slick1 {
+        font-size: 40px !important;
+        opacity: 0.8 !important;
+    }
+    
+    .next-slick1 {
+        right: 15px !important;
+    }
+    
+    .prev-slick1 {
+        left: 15px !important;
+    }
+    
+    .wrap-slick1:hover .arrow-slick1 {
+        opacity: 1 !important;
+    }
+}
+
+/* Fix mobile product grid */
+@media screen and (max-width: 767px) {
+    .col-sm-6.col-md-4.col-lg-3.p-b-35 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        padding: 8px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .block2-pic {
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    
+    .image-container {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .product-image {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+    }
+}
+
+    /* Fix mobile category section */
+    @media screen and (max-width: 767px) {
+        .sec-banner .col-md-6.col-xl-4 {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+            margin-bottom: 15px !important;
+        }
+        
+        .block1 {
+            margin-bottom: 20px !important;
+        }
+        
+        /* Reduce margin between slider and category section */
+        .sec-banner {
+            margin-top: 20px !important;
+            padding-top: 20px !important;
+        }
+        
+        /* Reduce top margin of category section */
+        .sec-banner .container {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        
+        /* Style the Categories heading section */
+        .bg0.p-t-23.p-b-20 {
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+            margin-top: 15px !important;
+            margin-bottom: 0 !important;
+        }
+        
+        .bg0.p-t-23.p-b-20 h3 {
+            font-size: 28px !important;
+            margin: 0 !important;
+            color: #333 !important;
+            font-weight: 600 !important;
+            line-height: 1.2 !important;
+        }
+        
+        /* Reduce gap between categories heading and category cards */
+        .sec-banner.bg0.p-t-20.p-b-50 {
+            margin-top: 15px !important;
+            padding-top: 15px !important;
+        }
+        
+        /* More aggressive gap reduction for categories section */
+        section.bg0.p-t-23.p-b-20 {
+            margin-top: 15px !important;
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+        }
+        
+        /* Target the specific categories heading */
+        section.bg0.p-t-23.p-b-20 h3.ltext-103.cl5.mt-5 {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        
+        /* Reduce gap between slider and categories heading */
+        .section-slide + section.bg0.p-t-23.p-b-20 {
+            margin-top: 15px !important;
+        }
+        
+        /* Reduce gap between categories heading and category cards */
+        section.bg0.p-t-23.p-b-20 + .sec-banner {
+            margin-top: 15px !important;
+            padding-top: 15px !important;
+        }
+    }
+
+/* Fix mobile modal */
+@media screen and (max-width: 767px) {
+    #productModal .modal-content {
+        width: 95% !important;
+        margin: 20px auto !important;
+        padding: 15px !important;
+        max-height: 90vh !important;
+        overflow-y: auto !important;
+    }
+    
+    #productModal .close {
+        font-size: 20px !important;
+        top: 5px !important;
+        right: 10px !important;
+        color: #666 !important;
+        transition: color 0.2s ease !important;
+        cursor: pointer !important;
+    }
+    
+    #productModal .close:hover {
+        color: #333 !important;
+    }
+}
+
+    /* Fix mobile buttons */
+    @media screen and (max-width: 767px) {
+        .show-modal-btn {
+            font-size: 10px !important;
+            padding: 6px 8px !important;
+            min-height: 30px !important;
+            transition: all 0.2s ease !important;
+        }
+        
+        .show-modal-btn:hover {
+            transform: translateY(-1px) !important;
+        }
+        
+        .btn-addwish-b2 {
+            min-width: 30px !important;
+            min-height: 30px !important;
+            transition: all 0.2s ease !important;
+        }
+        
+        .btn-addwish-b2:hover {
+            transform: scale(1.05) !important;
+        }
+        
+        .color-btn {
+            width: 15px !important;
+            height: 15px !important;
+            margin: 2px !important;
+            min-width: 15px !important;
+            min-height: 15px !important;
+            border-radius: 50% !important;
+            transition: transform 0.2s ease !important;
+        }
+        
+        .color-btn:hover {
+            transform: scale(1.1) !important;
+        }
+    }
+
+    /* Ensure proper mobile viewport */
+    @media screen and (max-width: 767px) {
+        .container {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+        
+        .section-slide {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        
+        .wrap-slick1 {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        
+        /* Reduce spacing between main sections */
+        .p-t-100 {
+            padding-top: 40px !important;
+        }
+        
+        .p-t-19 {
+            padding-top: 0 !important;
+        }
+    }
+
+    /* Additional fixes for mobile responsiveness */
+    @media screen and (max-width: 767px) {
+        /* Fix any remaining text shadow issues */
+        * {
+            text-shadow: none !important;
+            -webkit-text-shadow: none !important;
+        }
+        
+        /* Force reduce gaps around categories section */
+        section.bg0.p-t-23.p-b-20 {
+            margin-top: 15px !important;
+            margin-bottom: 15px !important;
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+        }
+        
+        /* Override any Bootstrap or utility classes that add spacing */
+        .p-t-23, .p-b-20 {
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+        }
+        
+        /* Force reduce gap between slider and categories */
+        .section-slide {
+            margin-bottom: 15px !important;
+            padding-bottom: 15px !important;
+        }
+        
+        /* Force reduce gap between categories and category cards */
+        .sec-banner.bg0.p-t-20.p-b-50 {
+            margin-top: 15px !important;
+            padding-top: 15px !important;
+        }
+    
+    /* Ensure proper mobile spacing */
+    .p-t-100 {
+        padding-top: 80px !important;
+    }
+    
+    .p-b-30 {
+        padding-bottom: 0 !important;
+    }
+    
+    .p-t-19 {
+        padding-top: 0 !important;
+    }
+    
+    .p-b-43 {
+        padding-bottom: 0 !important;
+    }
+    
+    /* Fix mobile slider text positioning */
+    .flex-col-l-m.h-full {
+        height: auto !important;
+        min-height: 100% !important;
+    }
+    
+    /* Remove any additional margins from slider text */
+    .layer-slick1 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .layer-slick1 .ltext-101,
+    .layer-slick1 .ltext-201 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+
+}
+
+/* Fix for mobile slider dots */
+@media screen and (max-width: 767px) {
+    .wrap-slick1-dots {
+        bottom: 20px !important;
+    }
+    
+    .wrap-slick1-dots li {
+        margin: 0 5px !important;
+    }
+    
+    .wrap-slick1-dots li button {
+        width: 10px !important;
+        height: 10px !important;
+    }
+}
+
+/* Ensure mobile header is always visible */
+@media screen and (max-width: 991px) {
+    .wrap-header-mobile {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 1000 !important;
+    }
+    
+    .container-menu-desktop {
+        display: none !important;
+    }
+}
+
+
+
+/* Fix mobile logo sizing */
+@media screen and (max-width: 991px) {
+    .logo-mobile img {
+        height: 50px !important;
+        width: auto !important;
+    }
+}
+
+/* Shopping Cart Page Mobile Fixes */
+@media screen and (max-width: 767px) {
+    /* Fix personal information form inputs */
+    .bor10.p-lr-40.p-t-30.p-b-40.m-r-63.m-l-40.m-lr-0-xl.p-lr-15-sm {
+        padding: 20px 15px !important;
+        margin: 0 !important;
+    }
+    
+    /* Make form inputs responsive */
+    .bor8.bg0.m-b-12[style*="width: 470px"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        transition: border-color 0.2s ease !important;
+    }
+    
+    .bor8.bg0.m-b-12[style*="width: 470px"]:focus {
+        border-color: #310E68 !important;
+        outline: none !important;
+    }
+    
+    /* Fix form container */
+    .size-208.w-full-ssm {
+        width: 100% !important;
+    }
+    
+    /* Ensure proper spacing on mobile */
+    .flex-w.flex-t.bor12.p-t-15.p-b-30 {
+        padding: 15px 0 !important;
+    }
+    
+    /* Fix submit button width */
+    .mt-4[style*="width: 470px"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        transition: all 0.2s ease !important;
+    }
+    
+    .mt-4[style*="width: 470px"]:hover {
+        transform: translateY(-1px) !important;
+    }
+    
+    /* Improve mobile form layout */
+    .bg0.p-t-15 {
+        padding: 15px 0 !important;
+    }
+    
+    /* Fix area selector width */
+    .bor8.bg0.m-b-12 select[name="area"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        transition: border-color 0.2s ease !important;
+    }
+    
+    .bor8.bg0.m-b-12 select[name="area"]:focus {
+        border-color: #310E68 !important;
+        outline: none !important;
+    }
+    
+    /* Wishlist page mobile improvements */
+    .wishlist-card {
+        margin-bottom: 15px !important;
+        padding: 15px !important;
+    }
+    
+    .wishlist-title {
+        font-size: 28px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .empty-wishlist-card .card-body {
+        padding: 40px 20px !important;
+    }
+    
+    .btn-continue-shopping,
+    .btn-view-product,
+    .btn-remove-wishlist {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+    }
+    
+    .product-price {
+        font-size: 16px !important;
+    }
+    
+    .product-name {
+        font-size: 16px !important;
+        margin-bottom: 8px !important;
+    }
+}
+
+    /* Additional slider fixes for mobile */
+    @media screen and (max-width: 767px) {
+        /* Ensure slider covers full viewport */
+        .section-slide {
+            width: 100vw !important;
+            margin-left: calc(-50vw + 50%) !important;
+            margin-right: calc(-50vw + 50%) !important;
+            margin-top: -17px !important;
+            padding-top: 0 !important;
+            overflow: hidden !important;
+        }
+        
+        /* Override all padding classes that might add spacing */
+        .section-slide .p-t-100,
+        .section-slide .p-b-30,
+        .section-slide .p-t-19,
+        .section-slide .p-b-43 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        
+        /* Move slider content up by 17px more */
+        .section-slide .flex-col-l-m {
+            margin-top: -17px !important;
+            transform: translateY(-17px) !important;
+        }
+        
+        /* Ensure the flex container has no padding */
+        .section-slide .flex-col-l-m {
+            padding: 0 0 0 40px !important;
+            margin: 0 !important;
+        }
+        
+        /* Remove any margin from the container */
+        .section-slide .container {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+    
+    /* Remove all spacing from slider text elements */
+    .flex-col-l-m .layer-slick1 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .layer-slick1 .ltext-101,
+    .layer-slick1 .ltext-201 {
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.1 !important;
+        text-align: left !important;
+    }
+    
+    /* Ensure proper text positioning */
+    .flex-col-l-m {
+        padding: 0 0 0 40px !important;
+        margin: 0 !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+    }
+    
+    /* Remove any default margins from slider container */
+    .wrap-slick1 .slick1 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .wrap-slick1 .slick1 .item-slick1 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+/* Mobile heart icon color - Match desktop exactly (for all pages) */
+@media screen and (max-width: 767px) {
+    /* Index page image-based heart icons - use filters */
+    .btn-addwish-b2 .icon-heart1,
+    .btn-addwish-b2 .icon-heart2 {
+        filter: grayscale(100%) !important;
+        transition: filter 0.3s ease !important;
+    }
+    
+    .btn-addwish-b2.active-wishlist .icon-heart1,
+    .btn-addwish-b2.active-wishlist .icon-heart2 {
+        filter: sepia(1) saturate(700%) hue-rotate(265deg) brightness(0.4) !important;
+    }
+    
+    .btn-addwish-b2:hover .icon-heart1,
+    .btn-addwish-b2:hover .icon-heart2 {
+        filter: sepia(1) saturate(700%) hue-rotate(265deg) brightness(0.4) !important;
+    }
+}
